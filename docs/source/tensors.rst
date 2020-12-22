@@ -233,6 +233,7 @@ view of a storage and defines numeric operations on it.
    .. automethod:: bmm
    .. automethod:: bool
    .. automethod:: byte
+   .. automethod:: broadcast_to
    .. automethod:: cauchy_
    .. automethod:: ceil
    .. automethod:: ceil_
@@ -315,13 +316,14 @@ view of a storage and defines numeric operations on it.
    .. automethod:: exponential_
    .. automethod:: fix
    .. automethod:: fix_
-   .. automethod:: fft
    .. automethod:: fill_
    .. automethod:: flatten
    .. automethod:: flip
    .. automethod:: fliplr
    .. automethod:: flipud
    .. automethod:: float
+   .. automethod:: float_power
+   .. automethod:: float_power_
    .. automethod:: floor
    .. automethod:: floor_
    .. automethod:: floor_divide
@@ -357,7 +359,6 @@ view of a storage and defines numeric operations on it.
    .. automethod:: igamma_
    .. automethod:: igammac
    .. automethod:: igammac_
-   .. automethod:: ifft
    .. automethod:: index_add_
    .. automethod:: index_add
    .. automethod:: index_copy_
@@ -369,10 +370,10 @@ view of a storage and defines numeric operations on it.
    .. automethod:: index_select
    .. automethod:: indices
       :noindex:
+   .. automethod:: inner
    .. automethod:: int
    .. automethod:: int_repr
    .. automethod:: inverse
-   .. automethod:: irfft
    .. automethod:: isclose
    .. automethod:: isfinite
    .. automethod:: isinf
@@ -459,6 +460,8 @@ view of a storage and defines numeric operations on it.
       :noindex:
    .. automethod:: mode
    .. automethod:: movedim
+   .. automethod:: moveaxis
+   .. automethod:: msort
    .. automethod:: mul
    .. automethod:: mul_
    .. automethod:: multiply
@@ -533,7 +536,6 @@ view of a storage and defines numeric operations on it.
    .. automethod:: resize_as_
    .. automethod:: retain_grad
       :noindex:
-   .. automethod:: rfft
    .. automethod:: roll
    .. automethod:: rot90
    .. automethod:: round
@@ -557,6 +559,8 @@ view of a storage and defines numeric operations on it.
    .. automethod:: sgn_
    .. automethod:: sin
    .. automethod:: sin_
+   .. automethod:: sinc
+   .. automethod:: sinc_
    .. automethod:: sinh
    .. automethod:: sinh_
    .. automethod:: asinh
@@ -597,6 +601,7 @@ view of a storage and defines numeric operations on it.
    .. automethod:: t
    .. automethod:: t_
    .. automethod:: tensor_split
+   .. automethod:: tile
    .. automethod:: to
    .. automethod:: to_mkldnn
    .. automethod:: take
