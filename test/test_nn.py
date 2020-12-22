@@ -1917,7 +1917,7 @@ class TestNN(NNTestCase):
         """
         # fixturize test
         # TODO: add other modules
-        modules = [nn.Linear(5, 7), nn.Conv3d(2, 2, 2)]
+        modules = [nn.Linear(5, 7), nn.Conv1d(16, 33, 3), nn.Conv2d(16, 33, 3), nn.Conv3d(2, 2, 2)]
         names = ['weight', 'bias']
 
         for m in modules:
