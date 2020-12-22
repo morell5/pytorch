@@ -96,4 +96,14 @@
     ImportError: cannot import name '_initExtension'
     ```
 
+    Причина:
+
+    ```
+    В директории _C файл __init__.pyi, а не __init__.py. В __init__.pyi есть объявление _initExtension
+    ```
+
+    Сделать:
+    * выяснить назначение расширения *.pyi
+    * выяснить должен ли быть файл __init__.py в _C
+
 8. Установить какая версия hypothesis совместима с текущей версией pytorch. Установить hypothesis
