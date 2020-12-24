@@ -14166,7 +14166,7 @@ class TestLazyModules(TestCase):
         with self.assertRaisesRegex(ValueError, 'uninitialized parameter'):
             torch.empty_like(param)
 
-        with self.assertRaisesRegex(ValueError, 'uninitialized parameter'):
+         self.assertRaisesRegex(ValueError, 'uninitialized parameter'):
             torch.add(param, param)
 
         with self.assertRaisesRegex(ValueError, 'uninitialized parameter'):
